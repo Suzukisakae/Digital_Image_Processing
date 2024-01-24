@@ -23,5 +23,6 @@
 - Nhận diện các vật thể có trong hình ảnh (con người, voi, xe buýt ...)
 
 <h3> Tuần 3 </h3>
+
 - Dùng yolo v8 train trên gg colab để nhận diện road sign
 - Tải file best.pt về và dùng để nhận diện các biển báo giao thông trong hình ảnh
