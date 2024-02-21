@@ -26,3 +26,9 @@
 
 - Dùng yolo v8 train trên gg colab để nhận diện road sign
 - Tải file best.pt về và dùng để nhận diện các biển báo giao thông trong hình ảnh
+
+<h3> Tuần 4 </h3>
+
+- Nhận diện Táo, thanh long, sầu riêng
+- Tải các ảnh trên mạng về làm mẫu. Chuẩn hóa lại các ảnh về cùng kích thước là 640x640 và đặt lại tên cho đồng bộ
+- Dùng lableImg để gán nhãn cho các ảnh

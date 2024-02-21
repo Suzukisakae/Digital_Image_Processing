@@ -1,0 +1,1 @@
+python labelImg.py D:\SPKT\NamBa\Ki2\DIPR430685_23_2_03\Tuan4\trai_cay_640x640\tao D:\SPKT\NamBa\Ki2\DIPR430685_23_2_03\Tuan4\trai_cay_640x640\trai_cay.txt
