@@ -33,6 +33,10 @@
 - Tải các ảnh trên mạng về làm mẫu. Chuẩn hóa lại các ảnh về cùng kích thước là 640x640 và đặt lại tên cho đồng bộ
 - Dùng lableImg để gán nhãn cho các ảnh
 
+<h3> Tuần 7 </h3>
+
+- Phân tích ảnh màu trong không gian RGB, HSV, LAB
+
 <h3> Tuần 8 </h3>
 
 - NHận dạng chữ số viết tay
