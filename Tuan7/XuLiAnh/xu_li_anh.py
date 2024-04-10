@@ -35,6 +35,14 @@ class App(tk.Tk):
         chapter_3_menu.add_command(label="Histogram", command=self.mnu_c3_histogram_click)
         chapter_3_menu.add_command(label="Hist Equal", command=self.mnu_c3_hist_equal_click)
         chapter_3_menu.add_command(label="Local Hist", command=self.mnu_c3_local_hist_click)
+        chapter_3_menu.add_command(label="Hist Stat", command=self.mnu_c3_hist_stat_click)
+        chapter_3_menu.add_command(label="Filter 2D", command=self.mnu_c3_filter2D_click)
+        chapter_3_menu.add_command(label="My Smooth", command=self.mnu_c3_my_smooth_click)
+        chapter_3_menu.add_command(label="Smooth Box", command=self.mnu_c3_smooth_box_click)
+        chapter_3_menu.add_command(label="Smooth Gaussian", command=self.mnu_c3_smooth_gaussian_click)
+        chapter_3_menu.add_command(label="My Median", command=self.mnu_c3_my_median_click)
+        chapter_3_menu.add_command(label="Median filter", command=self.mnu_c3_median_filter_click)
+
         menu.add_cascade(label="Chapter 3", menu=chapter_3_menu)
 
         self.config(menu=menu)
@@ -84,6 +92,34 @@ class App(tk.Tk):
 
     def mnu_c3_local_hist_click(self):
         self.imgout = c3.LocalHist(self.imgin)
+        cv2.imshow("Output Image", self.imgout)
+
+    def mnu_c3_hist_stat_click(self):
+        self.imgout = c3.HistStat(self.imgin)
+        cv2.imshow("Output Image", self.imgout)
+
+    def mnu_c3_filter2D_click(self):
+        self.imgout = c3.MyFilter2D(self.imgin)
+        cv2.imshow("Output Image", self.imgout)
+
+    def mnu_c3_my_smooth_click(self):
+        self.imgout = c3.MySmooth(self.imgin)
+        cv2.imshow("Output Image", self.imgout)
+    
+    def mnu_c3_smooth_box_click(self):
+        self.imgout = cv2.boxFilter(self.imgin, cv2.CV_8UC1, (45,45))
+        cv2.imshow("Output Image", self.imgout)
+
+    def mnu_c3_smooth_gaussian_click(self):
+        self.imgout = cv2.GaussianBlur(self.imgin, (43,43), 7.0)
+        cv2.imshow("Output Image", self.imgout)
+
+    def mnu_c3_my_median_click(self):
+        self.imgout = c3.MyMedianFilter(self.imgin)
+        cv2.imshow("Output Image", self.imgout)
+
+    def mnu_c3_median_filter_click(self):
+        self.imgout = cv2.medianBlur(self.imgin, 5)
         cv2.imshow("Output Image", self.imgout)
 
 if __name__ == "__main__":
