@@ -1,0 +1,6 @@
+tron:           min = 0.000624, max = 0.000628
+elip:           min = 0.000651, max = 0.000708
+vuong:          min = 0.000647, max = 0.000652
+chu nhat:       min = 0.000681, max = 0.000742
+tam_giac:       min = 0.000763, max = 0.000807
+tam_giac_vuong: min = 0.000909, max = 0.000991
